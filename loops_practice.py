@@ -3,6 +3,7 @@ import random
 
 
 class LoopsPractice:
+
     def __init__(self):
         pass
 
@@ -27,13 +28,12 @@ class LoopsPractice:
         counter = 0
         while counter < 10:
             counter += 1
-            stress = random.randint(1,100)
+            stress = random.randint(0,101)
             if stress > 85:
                 print(f"Предупреждение! нагрузка равна {stress}%")
             else:
                 print(f"Текущая нагрузка {stress}%")
             time.sleep(0.2)
-
 
 
 
