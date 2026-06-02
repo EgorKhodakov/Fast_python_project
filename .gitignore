@@ -3,3 +3,4 @@ pycache
 .idea
 .vscode
 __pycache__
+log.txt
