@@ -36,3 +36,6 @@ class LoopsPractice:
             else:
                 print(f"Текущая нагрузка {stress}%")
             time.sleep(0.2)
+
+
+
