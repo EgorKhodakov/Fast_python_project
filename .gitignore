@@ -1,6 +1,5 @@
 venv/
-pycache
-.idea
-.vscode
-__pycache__
+__pycache__/
+.idea/
+.vscode/
 log.txt
