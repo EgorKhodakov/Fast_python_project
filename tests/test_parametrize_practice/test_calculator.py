@@ -1,6 +1,6 @@
 import pytest
 
-from test_parametrize_practice.calculator import Calculator
+from tests.test_parametrize_practice.calculator import Calculator
 
 """Тест с параметризацией трех аргументов"""
 

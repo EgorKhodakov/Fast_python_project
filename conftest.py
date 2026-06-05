@@ -1,6 +1,6 @@
 import pytest
-from test_fixture_practice.test_task_queue import TaskQueue
-from test_parametrize_practice.calculator import Calculator
+from tests.test_fixture_practice import TaskQueue
+from tests.test_parametrize_practice.calculator import Calculator
 
 
 @pytest.fixture(scope="module")
@@ -17,3 +17,8 @@ def module_queue():
 def calk():
     calk = Calculator()
     return calk
+
+
+@pytest.fixture(scope="module")
+def driver():
+    return "Driver"
