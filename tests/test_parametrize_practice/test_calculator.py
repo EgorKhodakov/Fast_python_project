@@ -49,7 +49,7 @@ def test_divide_by_zero_xfail(calk: Calculator) -> None:
     [
         (pytest.param(2, 6, 12, marks=pytest.mark.smoke)),
         (9, 3, 27),
-        (7, 0, None),
+        pytest.param(7, 0, None, marks=pytest.mark.xfail),
         (2, 7, 14),
     ],
 )

@@ -1,5 +1,5 @@
 import pytest
-from tests.test_fixture_practice import TaskQueue
+from tests.test_fixture_practice.test_task_queue import TaskQueue
 from tests.test_parametrize_practice.calculator import Calculator
 
 
