@@ -96,6 +96,9 @@ class Student:
 def get_avg_grade(student: Student) -> float:
     return round(sum(student.grade) / len(student.grade), 1)
 
+def age_name(student: Student):
+    print(f"Студенту {student.name} {student.age} лет")
+
 
 Egor = Student("Egor", 45, [1.5, 5.5, 3.6])
 Ivan = Student("Ivan", 45, [6.5, 2.8, 4.9])
