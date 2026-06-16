@@ -1,4 +1,8 @@
 import pytest
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 from tests.test_fixture_practice.test_task_queue import TaskQueue
 from tests.test_parametrize_practice.calculator import Calculator
 
@@ -21,4 +25,7 @@ def calk():
 
 @pytest.fixture(scope="module")
 def driver():
-    return "Driver"
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service)
+    yield driver
+    driver.quit()
