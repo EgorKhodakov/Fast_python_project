@@ -23,7 +23,7 @@ def calk():
     return calk
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="function")
 def driver():
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)

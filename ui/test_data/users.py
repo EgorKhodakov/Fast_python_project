@@ -1,3 +1,3 @@
-TEST_USERNAME = "Krasnaya_shapochka"
-TEST_PASSWORD = "wrong_password"
-ERROR_TEXT = "Wrong username or password"
+FAKE_USERNAME = "KrasnayaShapochka"
+FAKE_PASSWORD = "Dhgfge@#Lw%%#"
+ERROR_TEXT = "Incorrect username or password."
