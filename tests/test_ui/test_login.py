@@ -1,8 +1,9 @@
 from config import VALID_PASSWORD, VALID_USERNAME
 from ui.pages.dashboard_page import DashboardPage
 from ui.pages.login_page import LoginPage
-from ui.test_data.users import ERROR_TEXT, FAKE_PASSWORD, FAKE_USERNAME
-
+from ui.test_data.users import ERROR_TEXT
+from ui.test_data.fakers import fake
+import time
 
 class TestLogin:
 
@@ -27,8 +28,8 @@ class TestLogin:
         """
         login_page = LoginPage(driver)
         login_page.open()
-        login_page.enter_username(FAKE_USERNAME)
-        login_page.enter_password(FAKE_PASSWORD)
+        login_page.enter_username(fake.user_name())
+        login_page.enter_password(fake.password())
         login_page.click_sign_in()
 
         assert login_page.get_error_message() == ERROR_TEXT, "Неправильный текст ошибки"
