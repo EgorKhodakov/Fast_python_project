@@ -8,7 +8,7 @@ class CiCdPage:
     UP_START_FREE_TRIAL = (By.XPATH, "(//span[text()='Start a free trial'])[1]")
     UP_CONTACT_SALES = (By.XPATH, "(//span[text()='Contact sales'])[1]")
 
-    EXPLORE_GITHUB_ADVANCED_SECURITY = (By.XPATH, "Explore GitHub Advanced Security")
+    EXPLORE_GITHUB_ADVANCED_SECURITY = (By.XPATH, "//a[text()='Explore GitHub Advanced Security")
 
     DOWN_START_FREE_TRIAL = (By.XPATH, "(//span[text()='Start a free trial'])[2]")
     DOWN_CONTACT_SALES = (By.XPATH, "(//span[text()='Contact sales'])[2]")
