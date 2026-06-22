@@ -1,6 +1,6 @@
 from selenium.common import TimeoutException
 
-from ui.locators.dashboard_locators import DashboardLocators
+from ui.locators.dashboard_page import DashboardLocators
 from ui.pages.base_page import BasePage
 
 

@@ -1,6 +1,6 @@
 from selenium.common import TimeoutException
 
-from ui.locators.login_page_locators import LoginPageLocators
+from ui.locators.login_page import LoginPageLocators
 from ui.pages.base_page import BasePage
 
 
