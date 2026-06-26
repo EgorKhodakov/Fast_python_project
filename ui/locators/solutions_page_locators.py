@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-class CiCdPage:
+class SolutionsLocators:
 
     SOLUTIONS = (By.XPATH, "//a[text()='Solutions']")
     BY_USE_CASE = (By.XPATH, "//a[text()='By use case']")
