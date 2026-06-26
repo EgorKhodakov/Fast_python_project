@@ -1,5 +1,15 @@
 from selenium.webdriver.common.by import By
 
+class HomePageLocators():
+
+    PLATFORM_BUTTON  = (By.XPATH, "//button[text() = 'Platform']")
+    SOLUTIONS_BUTTON = (By.XPATH, "//button[text() = 'Solutions']")
+    RESOURCES_BUTTON = (By.XPATH, "//button[text() = 'Resources']")
+    OPEN_SOURCES_BUTTON = (By.XPATH, "//button[text() = 'Open Source']")
+    ENTERPRICE_BUTTON = (By.XPATH, "//button[text() = 'Enterprise']")
+    PRICING_BUTTON = (By.XPATH, "(//span[text() = 'Pricing'])[1]")
+
+
 class SolutionsMenu:
     """Left section"""
     ENTERPRISES = (By.XPATH, "//span[text() = 'Enterprises']")
@@ -21,7 +31,3 @@ class SolutionsMenu:
     MANUFACTURING = (By.XPATH, "//span[text() = 'Manufacturing']")
     GOVERNMENT = (By.XPATH, "//span[text() = 'Government']")
     VIEW_ALL_INDUSTRIES = (By.XPATH, "//li[.//button[text()='Solutions']]//span[text()='View all industries']")
-
-
-
-

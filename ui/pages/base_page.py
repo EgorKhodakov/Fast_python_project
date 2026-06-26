@@ -4,6 +4,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class BasePage:
+    """
+    Базовый класс для страниц
+    принимает
+    driver - экземпляр класса драйвер
+    url - урл страницы
+    """
     def __init__(self, driver, url: str):
         self.driver = driver
         self.url = url
