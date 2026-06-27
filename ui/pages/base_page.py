@@ -4,6 +4,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class BasePage:
+    """
+    Базовый класс для страниц
+    принимает
+    driver - экземпляр класса драйвер
+    url - урл страницы
+    """
+
     def __init__(self, driver, url: str):
         self.driver = driver
         self.url = url
@@ -46,3 +53,9 @@ class BasePage:
 
     def get_text(self, locator: tuple[str, str]) -> str:
         return self.find_element(locator).text
+
+    def get_attribute(self, locator: tuple[str, str], attribute: str) -> str:
+        """
+        возвращает параметр аттрибута
+        """
+        return self.find_element(locator).get_property(attribute)
