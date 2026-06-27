@@ -52,3 +52,10 @@ class BasePage:
 
     def get_text(self, locator: tuple[str, str]) -> str:
         return self.find_element(locator).text
+
+
+    def get_attribute(self, locator: tuple[str, str], attribute: str) -> str:
+        """
+        возвращает параметр аттрибута
+        """
+        return self.find_element(locator).get_property(attribute)

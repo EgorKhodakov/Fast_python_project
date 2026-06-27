@@ -3,7 +3,7 @@ from ui.pages.base_page import BasePage
 
 
 class SolutionPage(BasePage):
-    def init(self, driver, url = "https://github.com/solutions/use-case/ci-cd"):
+    def __init__(self, driver, url="https://github.com/solutions/use-case/ci-cd"):
         super().__init__(driver, url)
 
 

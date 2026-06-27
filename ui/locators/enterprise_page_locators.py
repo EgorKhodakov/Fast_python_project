@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-class ContactSales:
+class EnterpriseLocators:
 
     FIRST_NAME = (By.ID, "form-field-first_name")
     LAST_NAME = (By.ID, "form-field-last_name")
