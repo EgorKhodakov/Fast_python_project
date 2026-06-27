@@ -3,7 +3,10 @@ from ui.pages.dashboard_page import DashboardPage
 from ui.pages.login_page import LoginPage
 from ui.test_data.users import ERROR_TEXT
 from ui.test_data.fakers import fake
+import pytest
 
+
+@pytest.mark.ui
 class TestLogin:
 
     def test_valid_login(self, driver):

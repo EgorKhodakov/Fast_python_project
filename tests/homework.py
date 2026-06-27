@@ -33,9 +33,9 @@ data = {
 
 
 def week_day() -> None:
-    day = int(input(f"please enter day in 1-7 - "))
+    day = int(input("please enter day in 1-7 - "))
     while day not in range(1, 8):
-        day = int(input(f"please enter day in 1-7 - "))
+        day = int(input("please enter day in 1-7 - "))
     print(f"today is {data[day]}")
 
 
@@ -95,6 +95,7 @@ class Student:
 
 def get_avg_grade(student: Student) -> float:
     return round(sum(student.grade) / len(student.grade), 1)
+
 
 def age_name(student: Student):
     print(f"Студенту {student.name} {student.age} лет")

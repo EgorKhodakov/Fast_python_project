@@ -1,6 +1,6 @@
 from ui.pages.base_page import BasePage
 from ui.locators.enterprise_page_locators import EnterpriseLocators
-from ui.test_data.fakers import fake
+
 
 class EnterprisePage(BasePage):
     def __init__(self, driver, url="https://github.com/enterprise/"):
