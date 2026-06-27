@@ -6,13 +6,13 @@ class HomePage(BasePage):
     def __init__(self, driver, url="https://github.com/"):
         super().__init__(driver, url)
 
-    def click_on_solution_menu(self):
+    def go_to_solution_menu(self):
         """
         Нажатие на кнопку SolutionsMenu в хедере
         """
         self.click(HomePageLocators.SOLUTIONS_BUTTON)
 
-    def click_on_ci_cd(self):
+    def select_cicd(self):
         """
         Нажатие на кнопку CI/CD в меню Solutions
         """

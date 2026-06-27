@@ -21,13 +21,13 @@ class TestEnterprisePage:
         home_page = HomePage(driver)
 
         home_page.open()
-        home_page.click_on_solution_menu()
-        home_page.click_on_ci_cd()
+        home_page.go_to_solution_menu()
+        home_page.select_cicd()
 
         # Открываем страницу solutions
         solution_page = SolutionPage(driver)
 
-        solution_page.click_on_contact_sales()
+        solution_page.click_contact_sales()
 
         # Открываем страницу Enterprise
         enterprise_page = EnterprisePage(driver)

@@ -9,7 +9,7 @@ class SolutionPage(BasePage):
                  ):
         super().__init__(driver, url)
 
-    def click_on_contact_sales(self):
+    def click_contact_sales(self):
         """
         Нажатие на кнопку "Contact sales" в верхней части страницы
         """
