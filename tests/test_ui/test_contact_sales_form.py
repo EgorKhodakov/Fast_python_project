@@ -1,6 +1,6 @@
 from ui.pages.home_page import HomePage
-from ui.pages.enterprise_page import EnterprisePage
-from ui.pages.solution_page import SolutionPage
+from ui.pages.contact_sales_page import EnterprisePage
+from ui.pages.cd_cd_page import SolutionPage
 from ui.test_data.fakers import fake
 import pytest
 
