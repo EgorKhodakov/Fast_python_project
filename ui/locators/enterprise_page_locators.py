@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class EnterpriseLocators:
 
     FIRST_NAME = (By.ID, "form-field-first_name")

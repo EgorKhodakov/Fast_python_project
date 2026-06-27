@@ -25,7 +25,6 @@ class TestLogin:
         assert dashboard.get_user_avatar(), "Аватар не найден"
         assert dashboard.dashboard_is_visible(), "Надпись Dashboard не найдена"
 
-
     def test_failed_login(self, driver, username, password):
         """
         Проверка логина с невалидными данными

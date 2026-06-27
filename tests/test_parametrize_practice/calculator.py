@@ -28,4 +28,4 @@ class Calculator:
         """Возведение в степень. Работает только с целыми показателями."""
         if not isinstance(b, int):
             raise TypeError("Степень должна быть целым числом")
-        return a ** b
+        return a**b

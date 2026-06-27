@@ -1,5 +1,6 @@
 from faker import Faker
 
+
 class Fake:
     def __init__(self, faker: Faker) -> None:
         self.faker = faker

@@ -2,11 +2,14 @@ import pytest
 
 
 @pytest.mark.parametrize(
-    "a,b,expected", [(pytest.param(1, 2, 6, marks=pytest.mark.xfail)),
-                     (3, 3, 6),
-                     (3, 4, 7),
-                     pytest.param(4, 5, 8, marks=pytest.mark.xfail),
-                     (2, 2, 4)]
+    "a,b,expected",
+    [
+        (pytest.param(1, 2, 6, marks=pytest.mark.xfail)),
+        (3, 3, 6),
+        (3, 4, 7),
+        pytest.param(4, 5, 8, marks=pytest.mark.xfail),
+        (2, 2, 4),
+    ],
 )
 def test_assertion(a, b, expected):
     assert a + b == expected
