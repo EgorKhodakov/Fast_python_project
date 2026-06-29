@@ -1,4 +1,4 @@
-from ui.locators.home_page_locators import HomePageLocators, SolutionsMenu
+from ui.locators.home_page_locators import HomePageLocators, SolutionsMenu, ResourcesMenuLocators
 from ui.pages.base_page import BasePage
 
 
@@ -17,3 +17,20 @@ class HomePage(BasePage):
         Нажатие на кнопку CI/CD в меню Solutions
         """
         self.click(SolutionsMenu.CI_CD)
+
+    def go_to_resources_menu(self):
+        """
+        Нажатие на кнопку Resources в хедере
+        """
+        self.click(HomePageLocators.RESOURCES_BUTTON)
+
+    def get_topics_elements(self):
+        """
+        получение списка элементов раздела Topics
+        """
+        elements = self.find_elements(ResourcesMenuLocators.ALL_TOPICS_LINKS)
+        return [el.text for el in elements]
+
+
+
+
