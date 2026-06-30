@@ -1,3 +1,6 @@
+from selenium.webdriver import Keys
+from selenium.webdriver.common.by import By
+
 from ui.locators.duckduckgo_locators import DuckDuckGoLocators
 from ui.pages.base_page import BasePage
 
@@ -19,7 +22,6 @@ class DuckDuckGoPage(BasePage):
         Нажатие на кнопку поиска
         """
         self.click(DuckDuckGoLocators.START_SEARCH_BUTTON)
-
 
     def return_search_results(self) -> int:
         """

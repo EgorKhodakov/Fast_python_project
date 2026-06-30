@@ -6,3 +6,4 @@ python -m venv\venv
 .\venv\Scripts\activate
 3. Установить зависимости - pip install requirements.txt
 4. Запустить тесты - pytest -v
+5. Запуск UI тестов  - pytest -v -m ui
