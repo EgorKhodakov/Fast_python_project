@@ -1,6 +1,6 @@
 from ui.pages.home_page import HomePage
 from ui.pages.contact_sales_page import EnterprisePage
-from ui.pages.cd_cd_page import SolutionPage
+from ui.pages.cicd_page import CiCdPage
 from ui.test_data.fakers import fake
 import pytest
 
@@ -25,9 +25,9 @@ class TestEnterprisePage:
         home_page.select_cicd()
 
         # Открываем страницу solutions
-        solution_page = SolutionPage(driver)
+        cicd_page = CiCdPage(driver)
 
-        solution_page.click_contact_sales()
+        cicd_page.click_contact_sales()
 
         # Открываем страницу Enterprise
         enterprise_page = EnterprisePage(driver)

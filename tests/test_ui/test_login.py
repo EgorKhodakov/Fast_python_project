@@ -1,12 +1,10 @@
-from config import VALID_PASSWORD, VALID_USERNAME, VALID_EMAIL
-from ui.pages.dashboard_page import DashboardPage
-from ui.pages.home_page import HomePage
-from ui.pages.login_page import LoginPage
-from ui.test_data.users import ERROR_TEXT
-from ui.test_data.fakers import fake
 import pytest
-import time
 
+from config import VALID_EMAIL, VALID_USERNAME, VALID_PASSWORD
+from ui.pages.dashboard_page import DashboardPage
+from ui.pages.login_page import LoginPage
+from ui.test_data.fakers import fake
+from ui.test_data.users import ERROR_TEXT
 
 @pytest.mark.ui
 class TestLogin:
@@ -38,22 +36,3 @@ class TestLogin:
         login_page.click_sign_in()
 
         assert login_page.get_error_message() == ERROR_TEXT, "Неправильный текст ошибки"
-
-
-    def test_resources_menu(self, driver):
-        """
-        Проверка вхождения ожидаемых элементов в раздел Resources
-        """
-        page = HomePage(driver)
-        expected_elements = {"AI", "DevOps", "Security",
-                             "Software Development", "View all topics"}
-
-        page.open()
-        page.go_to_resources_menu()
-        actual_elements = set(page.get_topics_elements())
-
-        assert expected_elements.issubset(actual_elements), \
-            f"Не найдены элементы {expected_elements - actual_elements}"
-
-
-

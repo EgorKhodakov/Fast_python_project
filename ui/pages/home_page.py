@@ -23,6 +23,8 @@ class HomePage(BasePage):
         Нажатие на кнопку Resources в хедере
         """
         self.click(HomePageLocators.RESOURCES_BUTTON)
+        self.find_element(ResourcesMenuLocators.AI) # чтобы прогрузилось все меню
+
 
     def get_topics_elements(self):
         """

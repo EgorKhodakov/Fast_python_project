@@ -2,7 +2,7 @@ from ui.locators.solutions_page_locators import SolutionsLocators
 from ui.pages.base_page import BasePage
 
 
-class SolutionPage(BasePage):
+class CiCdPage(BasePage):
     def __init__(self, driver, url="https://github.com/solutions/use-case/ci-cd"):
         super().__init__(driver, url)
 
