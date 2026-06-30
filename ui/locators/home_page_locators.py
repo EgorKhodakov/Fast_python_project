@@ -45,3 +45,13 @@ class SolutionsMenu:
         By.XPATH,
         "//li[.//button[text()='Solutions']]//span[text()='View all industries']",
     )
+
+class ResourcesMenuLocators:
+    AI = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span[text() = 'AI']")
+    SOFTWARE_DEVELOPMENT = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span[text() = 'Software Development']")
+    DEVOPS = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span[text() = 'DevOps']")
+    SECURITY = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span[text() = 'Security']")
+    VIEW_ALL_TOPICS = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span[text() = 'View all topics']")
+
+    ALL_TOPICS_LINKS = (By.XPATH, "//div[./span[text() = 'EXPLORE BY TOPIC']]//li//span")
+
