@@ -37,4 +37,5 @@ class TestLogin:
         login_page.click_sign_in()
 
         assert login_page.get_error_message() == ERROR_TEXT, "Неправильный текст ошибки"
+        assert login_page.get_current_url() == driver.current_url
 
