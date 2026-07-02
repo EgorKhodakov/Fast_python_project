@@ -6,6 +6,7 @@ from ui.pages.login_page import LoginPage
 from ui.test_data.fakers import fake
 from ui.test_data.users import ERROR_TEXT
 
+
 @pytest.mark.ui
 class TestLogin:
 
@@ -36,3 +37,4 @@ class TestLogin:
         login_page.click_sign_in()
 
         assert login_page.get_error_message() == ERROR_TEXT, "Неправильный текст ошибки"
+

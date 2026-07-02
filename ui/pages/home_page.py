@@ -1,4 +1,8 @@
-from ui.locators.home_page_locators import HomePageLocators, SolutionsMenu, ResourcesMenuLocators
+from ui.locators.home_page_locators import (
+    HomePageLocators,
+    SolutionsMenu,
+    ResourcesMenuLocators,
+)
 from ui.pages.base_page import BasePage
 
 
@@ -23,8 +27,7 @@ class HomePage(BasePage):
         Нажатие на кнопку Resources в хедере
         """
         self.click(HomePageLocators.RESOURCES_BUTTON)
-        self.find_element(ResourcesMenuLocators.AI) # чтобы прогрузилось все меню
-
+        self.find_element(ResourcesMenuLocators.AI)  # чтобы прогрузилось все меню
 
     def get_topics_elements(self):
         """
@@ -32,7 +35,3 @@ class HomePage(BasePage):
         """
         elements = self.find_elements(ResourcesMenuLocators.ALL_TOPICS_LINKS)
         return [el.text for el in elements]
-
-
-
-

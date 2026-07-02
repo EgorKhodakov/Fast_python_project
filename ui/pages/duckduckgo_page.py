@@ -6,16 +6,14 @@ from ui.pages.base_page import BasePage
 
 
 class DuckDuckGoPage(BasePage):
-    def __init__(self, driver, url = 'https://duckduckgo.com'):
+    def __init__(self, driver, url="https://duckduckgo.com"):
         super().__init__(driver, url)
-
 
     def insert_in_search_box(self, text):
         """
         Заполнение поля поиска
         """
         self.send_keys(DuckDuckGoLocators.SEARCH_AREA, text)
-
 
     def start_search(self):
         """
@@ -28,5 +26,3 @@ class DuckDuckGoPage(BasePage):
         Возвращает количество найденных элементов на первой странице поиска
         """
         return len(self.find_elements(DuckDuckGoLocators.SEARCH_RESULTS))
-
-

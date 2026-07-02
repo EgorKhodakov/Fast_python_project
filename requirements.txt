@@ -6,3 +6,5 @@ requests
 selenium
 selene
 faker
+requests
+pydantic
