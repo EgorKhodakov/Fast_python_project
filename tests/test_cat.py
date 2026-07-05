@@ -3,7 +3,10 @@ import responses
 
 
 def test_get_fact_of_cat_mock(mocker):
+    # ПАТЧИНГ — подмена реального requests.get на фейк в модуле cat_function
     mock_get = mocker.patch("tests.cat_function.requests.get")
+
+    # МОКИНГ — настройка фейкового объекта: что он должен возвращать
     mock_get.return_value.json.return_value = {
         "fact": "Рыжие коты невероятно тупые"
     }
