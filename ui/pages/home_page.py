@@ -1,6 +1,8 @@
-from ui.locators.home_page_locators import (HomePageLocators,
-                                            ResourcesMenuLocators,
-                                            SolutionsMenu)
+from ui.locators.home_page_locators import (
+    HomePageLocators,
+    ResourcesMenuLocators,
+    SolutionsMenu,
+)
 from ui.pages.base_page import BasePage
 
 

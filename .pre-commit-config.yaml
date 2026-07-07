@@ -1,16 +1,19 @@
 # Список репозиториев с проверками
 repos:
-  # Первый репозиторий — автоформатирование black
+  # Первый репозиторий — сортировка импортов
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2                      # версия isort
+    hooks:
+      - id: isort  # сортируем импорты по алфавиту
+        args: ["--profile", "black"]
+
+
+  # Второй репозиторий — автоформатирование black
   - repo: https://github.com/psf/black
     rev: 24.4.0                      # версия black
     hooks:
       - id: black                     # запускаем black на всех Python-файлах
 
-  # Второй репозиторий — сортировка импортов
-  - repo: https://github.com/pycqa/isort
-    rev: 5.13.2                      # версия isort
-    hooks:
-      - id: isort                     # сортируем импорты по алфавиту
 
   # Третий репозиторий — общие проверки от pre-commit
   - repo: https://github.com/pre-commit/pre-commit-hooks
