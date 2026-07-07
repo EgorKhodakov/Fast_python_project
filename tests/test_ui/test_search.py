@@ -1,5 +1,6 @@
-from ui.pages.duckduckgo_page import DuckDuckGoPage
 import pytest
+
+from ui.pages.duckduckgo_page import DuckDuckGoPage
 
 
 @pytest.mark.ui

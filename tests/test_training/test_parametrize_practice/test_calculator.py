@@ -1,6 +1,6 @@
 import pytest
 
-from tests.test_parametrize_practice.calculator import Calculator
+from tests.test_training.test_parametrize_practice.calculator import Calculator
 
 """Тест с параметризацией трех аргументов"""
 
@@ -53,5 +53,7 @@ def test_divide_by_zero_xfail(calk: Calculator) -> None:
         (2, 7, 14),
     ],
 )
-def test_multiply_with_markers(calk: Calculator, a, b, expected: float) -> None:
+def test_multiply_with_markers(calk: Calculator,
+                               a, b, expected: float
+                               ) -> None:
     assert calk.multiply(a, b) == expected

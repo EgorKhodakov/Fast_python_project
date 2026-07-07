@@ -1,5 +1,5 @@
-from pydantic import BaseModel
-from pydantic import Field
+from pydantic import BaseModel, Field
+
 
 class ColorShema(BaseModel):
     id: int
@@ -7,6 +7,7 @@ class ColorShema(BaseModel):
     year: int
     color: str
     pantone_value: str
+
 
 class GeoShema(BaseModel):
     lat: str

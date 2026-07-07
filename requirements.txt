@@ -8,4 +8,5 @@ selene
 faker
 requests
 pydantic
- 
+mypy
+pre-commit

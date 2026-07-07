@@ -1,6 +1,7 @@
 import uuid
 from datetime import datetime
-from typing import Optional, List
+from typing import List, Optional
+
 import pytest
 
 
@@ -65,7 +66,10 @@ class TaskQueue:
         self._log.clear()
 
 
-"""Проверка фикстуры с видимостью scope=module и yield находящейся в conftest"""
+"""
+Проверка фикстуры с видимостью scope=module
+и yield находящейся в conftest
+ """
 
 
 def test_is_ywo(module_queue: TaskQueue):

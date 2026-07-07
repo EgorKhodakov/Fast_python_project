@@ -1,6 +1,6 @@
 import pytest
 
-from config import VALID_EMAIL, VALID_USERNAME, VALID_PASSWORD
+from config import VALID_EMAIL, VALID_PASSWORD, VALID_USERNAME
 from ui.pages.dashboard_page import DashboardPage
 from ui.pages.login_page import LoginPage
 from ui.test_data.fakers import fake
@@ -38,4 +38,3 @@ class TestLogin:
 
         assert login_page.get_error_message() == ERROR_TEXT, "Неправильный текст ошибки"
         assert login_page.get_current_url() == driver.current_url
-

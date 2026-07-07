@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-from tests.test_fixture_practice.test_task_queue import TaskQueue
-from tests.test_parametrize_practice.calculator import Calculator
+from tests.test_training.test_fixture_practice.test_task_queue import TaskQueue
+from tests.test_training.test_parametrize_practice import Calculator
 
 
 @pytest.fixture(scope="module")

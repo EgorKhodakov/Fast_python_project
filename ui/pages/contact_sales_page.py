@@ -1,5 +1,5 @@
-from ui.pages.base_page import BasePage
 from ui.locators.enterprise_page_locators import EnterpriseLocators
+from ui.pages.base_page import BasePage
 
 
 class EnterprisePage(BasePage):

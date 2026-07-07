@@ -5,3 +5,4 @@ __pycache__/
 log.txt
 .env
 git pull
+tests/test_training/

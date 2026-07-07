@@ -58,7 +58,7 @@ class BasePage:
         """
         возвращает параметр аттрибута
         """
-        return self.find_element(locator).get_property(attribute)
+        return str(self.find_element(locator).get_property(attribute))
 
     def find_elements(self, locator: tuple[str, str]) -> list:
         return self.wait.until(EC.presence_of_all_elements_located(locator))

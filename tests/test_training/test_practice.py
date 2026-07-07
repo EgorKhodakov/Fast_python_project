@@ -38,7 +38,8 @@ def apply_discount(price: float, discount_percent: float) -> float:
 
 
 def test_discount_with_fixture(sample_product):
-    result = apply_discount(sample_product["price"], sample_product["discount"])
+    result = apply_discount(sample_product["price"],
+                            sample_product["discount"])
     assert result == 800
 
 

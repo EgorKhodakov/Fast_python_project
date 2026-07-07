@@ -1,8 +1,9 @@
-from ui.pages.home_page import HomePage
-from ui.pages.contact_sales_page import EnterprisePage
-from ui.pages.cicd_page import CiCdPage
-from ui.test_data.fakers import fake
 import pytest
+
+from ui.pages.cicd_page import CiCdPage
+from ui.pages.contact_sales_page import EnterprisePage
+from ui.pages.home_page import HomePage
+from ui.test_data.fakers import fake
 
 
 @pytest.mark.ui

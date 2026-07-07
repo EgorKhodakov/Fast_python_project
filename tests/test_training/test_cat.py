@@ -1,5 +1,6 @@
-from tests.cat_function import get_fact_of_cat
 import responses
+
+from tests.test_training.cat_function import get_fact_of_cat
 
 
 def test_get_fact_of_cat_mock(mocker):
@@ -7,9 +8,8 @@ def test_get_fact_of_cat_mock(mocker):
     mock_get = mocker.patch("tests.cat_function.requests.get")
 
     # МОКИНГ — настройка фейкового объекта: что он должен возвращать
-    mock_get.return_value.json.return_value = {
-        "fact": "Рыжие коты невероятно тупые"
-    }
+    mock_get.return_value.json.return_value = {"fact": "Рыжие коты"
+                                                       " невероятно тупые"}
     mock_get.return_value.status_code = 403
     result = get_fact_of_cat()
     data = get_fact_of_cat().json()
@@ -24,7 +24,7 @@ def test_with_responses():
         responses.GET,
         "https://catfact.ninja/fact",
         json={"fact": "Рыжие коты невероятно тупые"},
-        status=200
+        status=200,
     )
 
     result = get_fact_of_cat()
