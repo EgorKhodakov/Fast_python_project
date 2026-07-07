@@ -20,10 +20,7 @@ class TestReqres:
 
     def test_create_post(self):
         url = "https://jsonplaceholder.typicode.com/posts"
-        response = requests.post(url, json={"title": "foo",
-                                            "body": "bar",
-                                            "userId": 1}
-                                 )
+        response = requests.post(url, json={"title": "foo", "body": "bar", "userId": 1})
         data = response.json()
 
         assert response.status_code == 201

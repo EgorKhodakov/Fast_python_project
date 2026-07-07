@@ -53,7 +53,5 @@ def test_divide_by_zero_xfail(calk: Calculator) -> None:
         (2, 7, 14),
     ],
 )
-def test_multiply_with_markers(calk: Calculator,
-                               a, b, expected: float
-                               ) -> None:
+def test_multiply_with_markers(calk: Calculator, a, b, expected: float) -> None:
     assert calk.multiply(a, b) == expected

@@ -8,8 +8,7 @@ def test_get_fact_of_cat_mock(mocker):
     mock_get = mocker.patch("tests.cat_function.requests.get")
 
     # МОКИНГ — настройка фейкового объекта: что он должен возвращать
-    mock_get.return_value.json.return_value = {"fact": "Рыжие коты"
-                                                       " невероятно тупые"}
+    mock_get.return_value.json.return_value = {"fact": "Рыжие коты" " невероятно тупые"}
     mock_get.return_value.status_code = 403
     result = get_fact_of_cat()
     data = get_fact_of_cat().json()
